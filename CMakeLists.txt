@@ -2,11 +2,13 @@ cmake_minimum_required(VERSION 2.8)
 
 project(setdynamixelmotorid)
 
+set(DYNAMIXEL_DIR /home/dahuang8/projects/DynamixelSDK)
+
 set(SOURCE_FILES setDynamixelMotorId.cpp)
 
-include_directories(/home/dahuang8/projects/DynamixelSDK/c++/include)
+include_directories(${DYNAMIXEL_DIR}/c++/include)
 
-link_directories(/home/dahuang8/projects/DynamixelSDK/c++/build/linux64)
+link_directories(${DYNAMIXEL_DIR}/c++/build/linux64)
 
 add_executable(setdynamixelmotorid ${SOURCE_FILES})
 
