@@ -1,0 +1,4 @@
+[Project]
+Name=setDynamixelMotorId
+Manager=KDevCMakeManager
+VersionControl=
